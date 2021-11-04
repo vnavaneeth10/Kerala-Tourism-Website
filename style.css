@@ -1,0 +1,448 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+header{
+    width: 100%; height:100vh;
+    
+     background:url(./images/home\ page.jpg), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) ;
+    background-repeat: repeat;
+    background-size:cover;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+nav{
+    width: 100%; height: 15vh;
+    background:rgba(0,0,0,0.2); color: white;
+    display: flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%; text-align: center;
+
+}
+
+nav .menu{
+    width: 40%; 
+    display: flex; justify-content: space-around;
+
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none; color: white;
+    font-weight: bold;
+}
+
+
+
+main{
+    width: 100%;
+    height: 85vh; display: flex;
+    justify-content: center;
+    align-items: center; text-align: center; color: white;
+
+}
+
+
+
+section h3{
+    font-size: 35px; font-weight: 200;letter-spacing: 3px; 
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+
+}
+
+section .btnone{
+    background: white;
+    color: black;
+}
+.btnone:hover{
+    background: #00b894;
+    color: white;
+}
+
+section .btntwo{
+    background: #3700ff;
+    color: white;
+}
+.btntwo:hover{
+    background: white;
+    color: black;
+
+}
+
+.change_content:after{
+    content:"";
+    animation: changetext 20s infinite linear; color:#00b894 ;
+}
+
+@keyframes changetext{
+    0%{content: "BEACHES";}
+    10%{content: "HOUSES";}
+    20%{content: "BACKWATERS";}
+    30%{content: "ARTS";}
+    40%{content: "FOODS";}
+    50%{content: "MARTIAL ARTS";}
+    60%{content: "FESTIVALS";}
+    70%{content: "CULTURE";}
+    80%{content: "LAND FORMS";}
+    90%{content: "ADVENTURES";}
+    100%{content: "TRADITIONS";}
+}    
+    
+
+
+/* Signup css detailes starts here */
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center; padding: 10px;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    /* background-image: url();   */
+     /* IMAGES NEEDED */
+     /* background-image: url('./'); */
+    background-repeat: repeat;
+    background-size:cover;
+}
+
+.container{
+    max-width:700px;
+    width: 100%;
+    
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .heads{
+    font-size: 50px;
+    font-weight:bold;
+    position: relative;
+    color: rgb(240, 227, 227);
+}
+
+.container .heads:before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .user-detailes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    font-weight: bold;
+}
+
+form .user-detailes .input-box{
+    margin-bottom: 15px ;
+    margin:20px 0 12px 0 ;
+    width:calc(100% / 2 - 20px) ;
+}
+
+.user-detailes .input-box .detailes{
+
+    display: block;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: rgb(255, 253, 253);
+
+
+}
+
+.user-detailes .input-box input{
+       height: 45px;
+       width: 100%;
+       outline: none;
+       border-radius: 5px;
+       border: 1px solid #ccc;
+       padding-left: 15px;
+       font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-detailes .input-box input:focus,
+.user-detailes .input-box input:valid{
+border-color: #9b59b6;
+
+}
+
+form .button{
+    height: 50px;
+    margin: 50px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 1050%;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+.login{
+     background:url(./images/login\ bg\ fixed.jpg) ;
+      /* IMAGES NEEDED */
+    background-size: cover;
+    }
+
+.login-form{
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+}
+
+.login-form h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+
+}
+
+.login-form p{
+    font-size: 20px;
+    margin: 15px 0;
+    color: black;
+
+}
+
+.login-form input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.login-form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin:20px 0;
+    padding:10px 15px ;
+    width: 50%;
+    border-radius: 5px;
+    border: 0;
+}
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), url(./images/WAYANAD.jpg));
+     /* IMAGES NEEDED */
+    background-position: center;
+    background-size: cover;
+    
+
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h2{
+    color: #fff;
+    font-size: 60px;
+}
+
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height:15px ;
+}
+
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline:none;
+    margin-top:30px;
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition:transform 0.5;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/District\ wise\ BG.jpg);
+}
+
+.card1{
+    background-image: url('./images/wallpaperflare.com_wallpaper.jpg');
+     /* IMAGES NEEDED */
+}
+
+/* .card2{
+    background-image: url('./images/kovalam-beach-tvm.jpg'); */
+     /* IMAGES NEEDED */
+/* }
+.card3{
+    background-image: url('./images/wallpaperflare.com_wallpaper.jpg'); */
+     /* IMAGES NEEDED */
+/* } */
+.card4{
+    background-image: url('./images/wallpaperflare.com_wallpaper.jpg');
+     /* IMAGES NEEDED */
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+.cardN{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition:transform 0.5;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.cardN:hover{
+    transform: translateY(-10px);
+}
+
+.card10{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+
+.card11{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+    /* background-image: url();
+     IMAGES NEEDED */
+}
+
+.card12{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card13{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+
+.card14{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card15{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card16{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card17{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+
+.card18{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card19{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card20{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card21{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+.card22{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+
+.card23{
+    background-image: url('./images/common\ bg\ for\ cards.jpg');
+     /* IMAGES NEEDED */
+}
+
+.districts{
+    background-image: url('./images/District\ wise\ BG.jpg');
+     /* IMAGES NEEDED */
+}
