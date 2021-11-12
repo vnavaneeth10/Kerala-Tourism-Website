@@ -10,31 +10,53 @@
 <body>
     <div class="container">
         <div class="heads">Signup</div>
-    <form action="#">
+    <form action="./index.html" target="_blank" onsubmit="return SignValidate()">
         <div class="user-detailes">
             <div class="input-box">
-                <span class="detailes">Full Name</span>
-                <input type="text" placeholder="Enter your name" required>
+                <span  class="detailes" >Full Name</span>
+                <input type="text" placeholder="Enter your name" required id="full">
+                <span id="fullerr"></span>
             </div>
             <div class="input-box">
-                <span class="detailes">User name</span>
-                <input type="text" placeholder="Enter your user name" required>
+                <span   class="detailes">Email ID</span>
+                <input type="email" placeholder="Enter your EmailID" required id="mail1">
+                <span id="mailer"></span>
             </div>
             <div class="input-box">
-                <span class="detailes">Email ID</span>
-                <input type="text" placeholder="Enter your email id" required>
+                <span   class="detailes">Phone number</span>
+                <input type="number" placeholder="Enter your phone number" required id="number">
+                <span id="phone"></span>
             </div>
             <div class="input-box">
-                <span class="detailes">Password</span>
-                <input type="text" placeholder="Password" required>
+                <span  class="detailes">Password</span>
+                <input onkeyup="trigger()" type="text" placeholder="Password" required id="pssd" >
+                <div class="indicator">
+                    <span class="poor"></span>
+                    <span class="medium"></span>
+                    <span class="strong"></span>
+                </div>
+                <div class="text">Your Pssword is too weak</div>
+                <span id="pad"></span>
             </div>
             <div class="input-box">
-                <span class="detailes">Confirm Password</span>
-                <input type="text" placeholder="Confirm Password" required>
+                <span  class="detailes">Confirm Password</span>
+                <input type="Password" placeholder="Confirm Password" required id="cpssd" >
+                <span id="cpad"></span>
             </div>
             <div class="input-box">
-                <span class="detailes">Address</span>
-                <input type="text" placeholder="Enter your Address" required>
+                <span  class="detailes">Country</span>
+                <input type="text" placeholder="Country of residence" required id="cntry">
+                <span id="cotry"></span>
+            </div>
+            <div class="input-box">
+                <span  class="detailes">Address</span>
+                <input type="text" placeholder="Enter your Address" required id="adds">
+                <span id="adss"></span>
+            </div>
+            <div class="input-box">
+                <span  class="detailes">PIN/ZIP Code</span>
+                <input type="number" placeholder="Enter your PIN/ZIP Code" required id="PIN">
+                <span id="PIN"></span>
             </div>
             <div class="button">
                 <input type="submit" value="Signup">
