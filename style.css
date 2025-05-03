@@ -1,132 +1,172 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    font-family: sans-serif;
-  }
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: sans-serif;
+}
 
 /* Header Section */
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 /* Navbar Styles */
 
 nav {
-    width: 100%; 
-    height: 15vh;
-    background:#e8eddf; 
-    color: #353535;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
-    padding: 0 2rem;
+  width: 100%;
+  height: 15vh;
+  background: #e8eddf;
+  color: #353535;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 /* Logo styling */
 
-nav .logo{
-    flex: 1; /* Takes available space */
-
+nav .logo {
+  flex: 1; /* Takes available space */
 }
 
 nav .logo a {
-    text-decoration: none;
-    color: #353535;
-  }
-  
-  nav .logo h1 {
-    font-size: 1.8rem;
-  }
-  
+  text-decoration: none;
+  color: #353535;
+}
 
+nav .logo h1 {
+  font-size: 1.8rem;
+}
 
-  /* Menu Section */
+/* Menu Section */
 
-  nav .menu{
-    flex: 2;
+nav .menu {
+  flex: 2;
 }
 
 nav .menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.2rem;
-    
-  }
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
 
-  nav .menu ul li {
-    position: relative;
-  }
+nav .menu ul li {
+  position: relative;
+}
 
-  /* Navbar links */
+/* Navbar links */
 nav .menu ul li a {
-    color: #001524;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
-    display: block;
-  }
+  color: #001524;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  display: block;
+}
+
+nav .menu ul li a:hover {
+  border-bottom: 1px solid black;
+}
 
 /* Dropdown styles */
 nav .menu ul li ul.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #e1e5f2;
-    min-width: 180px;
-    z-index: 999;
-    max-height:250px;
-    overflow:auto;
-  }
-
-  nav .menu ul li:hover ul.dropdown {
-    display: block;
-  }
-  
-  nav .menu ul li ul.dropdown li a {
-    padding: 10px;
-    display: block;
-    white-space: nowrap;
-  }
-
-  /* Main Page Styles starts here */
-
-main{
-    width: 100%;
-    height: 85vh; display: flex;
-    justify-content: center;
-    align-items: center; text-align: center; color: white;
-
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e1e5f2;
+  min-width: 180px;
+  z-index: 999;
+  max-height: 250px;
+  overflow: auto;
 }
 
-
-
-section h3{
-    font-size: 35px; font-weight: 200;letter-spacing: 3px; 
-    text-shadow: 1px 1px 2px black;
+nav .menu ul li:hover ul.dropdown {
+  display: block;
 }
 
-section h1{
-    margin: 30px 0 20px 0;
-    font-size: 50px;
-    font-weight: 700;
-    text-shadow: 2px 1px 5px black;
-    text-transform: uppercase;
+nav .menu ul li ul.dropdown li a {
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
 }
 
-section p{
+.hero {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #c6d2ed; /* Change based on image visibility */
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  border: 10px solid black;
+}
+
+.hero::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/main6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+/* .container img {
+    width:100%;
+    height: 100%;
+}
+
+section .centered{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+    text-align: center;
+} */
+
+.hero h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-shadow: 1.5px 1.5px 3px black;
+}
+
+.hero h1 {
+  margin: 30px 0 20px 0;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+/* section p{
     font-size: 25px;
     word-spacing: 2px;
     margin-bottom: 25px;
@@ -143,10 +183,11 @@ section a{
     text-decoration: none;
     letter-spacing: 1px;
     transition: all .5s ease;
+    text-align: center;
 
-}
+} */
 
-section .btnone{
+/* section .btnone{
     background: white;
     color: black;
 }
@@ -163,74 +204,98 @@ section .btntwo{
     background: white;
     color: black;
 
+} */
+
+.change_content:after {
+  content: "";
+  animation: changetext 20s infinite linear;
+  color: #00b894;
 }
 
-.change_content:after{
-    content:"";
-    animation: changetext 20s infinite linear; color:#00b894 ;
+@keyframes changetext {
+  0% {
+    content: "BEACHES";
+  }
+  5% {
+    content: "RITUALS";
+  }
+  10% {
+    content: "FESTIVALS";
+  }
+  20% {
+    content: "BACKWATERS";
+  }
+  30% {
+    content: "ART FORMS";
+  }
+  40% {
+    content: "FOODS";
+  }
+  50% {
+    content: "MARTIAL ARTS";
+  }
+  60% {
+    content: "FESTIVALS";
+  }
+  70% {
+    content: "CULTURE";
+  }
+  80% {
+    content: "LAND FORMS";
+  }
+  90% {
+    content: "ADVENTURES";
+  }
+  100% {
+    content: "TEMPLES";
+  }
 }
-
-@keyframes changetext{
-    0%{content: "BEACHES";}
-    5%{content: "GOD'S OWN COUNTRY";}
-    10%{content: "TRADITIONAL HOUSES";}
-    20%{content: "BACKWATERS";}
-    30%{content: "ART FORMS";}
-    40%{content: "FOODS";}
-    50%{content: "MARTIAL ARTS";}
-    60%{content: "FESTIVALS";}
-    70%{content: "CULTURE";}
-    80%{content: "LAND FORMS";}
-    90%{content: "ADVENTURES";}
-    100%{content: "TEMPLES";}
-}    
-    
-
 
 /* Signup css detailes starts here */
-body{
-    display: flex;
-    height: 100vh;
-    justify-content: center; padding: 10px;
-    align-items: center;
-    
-    /* background:url(./images/BG\ FOR\ SIGNUP.jpg); */
-    
-    background-repeat: repeat;
-    background-size:cover;
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+
+  /* background:url(./images/BG\ FOR\ SIGNUP.jpg); */
+
+  background-repeat: repeat;
+  background-size: cover;
 }
 
-.container{
-    max-width:700px;
-    width: 100%;
-    
-    padding: 25px 30px;
-    border-radius: 5px;
+.container {
+  max-width: 700px;
+  width: 100%;
+
+  padding: 25px 30px;
+  border-radius: 5px;
 }
 
-.container .heads{
-    font-size: 50px;
-    font-weight:bold;
-    position: relative;
-    color: rgb(240, 227, 227);
+.container .heads {
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  color: rgb(240, 227, 227);
 }
 
-.container .heads:before{
-    content:'';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+.container .heads:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
-.container form .user-detailes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
-    font-weight: bold;
+.container form .user-detailes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  font-weight: bold;
 }
 
 /* form .user-detailes .input-box{
@@ -340,50 +405,48 @@ form .button input:hover{
     border: 0;
 } */
 
-.container1{
-    width: 100%;
-    height: 100vh;
-    /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), url(./images/WAYANAD.jpg)); */
-     /* IMAGES NEEDED */
-    background-position: center;
-    background-size: cover;
-    
-
+.container1 {
+  width: 100%;
+  height: 100vh;
+  /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), url(./images/WAYANAD.jpg)); */
+  /* IMAGES NEEDED */
+  background-position: center;
+  background-size: cover;
 }
 
-.row{
-    display: flex;
-    height: 88%;
-    align-items: center;
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
 }
 
-.col{
-    flex-basis: 50%;
-    color: whitesmoke;
+.col {
+  flex-basis: 50%;
+  color: whitesmoke;
 }
 
-h2{
-    color: #fff;
-    font-size: 60px;
+h2 {
+  color: #fff;
+  font-size: 60px;
 }
 
-p{
-    color:black;
-    font-size: 11px;
-    line-height:15px ;
-    font-weight: bold;
+p {
+  color: black;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: bold;
 }
 
-button{
-    width: 180px;
-    color: #000;
-    font-size: 12px;
-    padding: 12px 0;
-    background: #fff;
-    border: 0;
-    border-radius: 20px;
-    outline:none;
-    margin-top:30px;
+button {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
 }
 
 /* .card{
@@ -414,7 +477,6 @@ button{
 .card:hover{
     transform: translateY(-10px);
 } */
-
 
 /* .cardN{
     width: 200px;
@@ -563,3 +625,55 @@ button{
 .text.strong{
     color:#23ad5c ;
 }  */
+
+.about-section {
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+  background: url("./images/kovalam\ beach.jpg") no-repeat center center;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #1b3d24;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -2;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  animation: fadeIn 2s ease-in;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00754a;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
