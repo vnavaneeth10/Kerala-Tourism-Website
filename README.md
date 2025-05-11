@@ -1,13 +1,12 @@
 # 📛 Kerala Tourism Website
 
-🔗 **Live Link / Demo Link**: [Explore Kerala](https://your-deployed-link.com)  
-*(Replace `https://your-deployed-link.com` with the actual deployed link if hosted)*
+🔗 **Live Link / Demo Link**: [Explore Kerala]([https://your-deployed-link.com](https://kerala-tourism-neov1n65v-navaneeth-vs-projects-78a45b3b.vercel.app/))  
+
 
 ---
 
 ## 📑 Table of Contents
 - [About the Project](#-about-the-project)
-- [Screenshots](#-screenshots)
 - [Technologies Used](#-technologies-used)
 - [Setup / Installation](#-setup--installation)
 - [Approach](#-approach)
@@ -20,13 +19,6 @@ Kerala Tourism Website is a captivating and interactive webpage designed to show
 
 ---
 
-## 📷 Screenshots
-*(Add screenshots or GIFs of your project here)*  
-Example:  
-![Kerala Tourism Homepage](https://via.placeholder.com/800x400)  
-*(Replace the placeholder URL with actual screenshots of your project)*
-
----
 
 ## ☕️ 🐍 ⚛️ Technologies Used
 - **HTML**: For structuring the webpage content.
@@ -41,3 +33,8 @@ Follow these steps to run the project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/vnavaneeth10/Kerala-Tourism-Website.git
+
+2. Navigate to the project directory:
+   cd Kerala-Tourism-Website
+3. Open the index.html file in your browser to view the website:
+   open index.html
