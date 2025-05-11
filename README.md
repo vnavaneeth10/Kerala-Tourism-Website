@@ -1,6 +1,6 @@
 # 📛 Kerala Tourism Website
 
-🔗 **Live Link / Demo Link**: [Explore Kerala]([https://your-deployed-link.com](https://kerala-tourism-neov1n65v-navaneeth-vs-projects-78a45b3b.vercel.app/))  
+🔗 **Live Link / Demo Link**: [Explore Kerala]([https://your-deployed-link.com](https://kerala-tourism-neov1n65v-navaneeth-vs-projects-78a45b3b.vercel.app/) 
 
 
 ---
